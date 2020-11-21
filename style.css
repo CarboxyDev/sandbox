@@ -72,7 +72,9 @@ body {
 	display: none;
 }
 
-
+#revert {
+	display: none;
+}
 
 
 @media all and (max-width: 748px){
@@ -92,6 +94,10 @@ body {
 	}
 	#changeCodeBtns {
 		left:-25%;
+	}
+	#revert {
+		position: absolute;
+		top:90%;
 	}
 
 
