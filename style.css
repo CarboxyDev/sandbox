@@ -19,25 +19,41 @@ body {
 	width:50vw;
 	position: absolute;
 	left:50vw;
+	overflow:scroll;
+	border-left:1vw solid #333;
+
+}
+#mini-mast {
+	height:7.5%;
+}
+#mini-mast span {
+	font-size:5vh;
+	color: #259042 ;
 
 }
 
-
 #codeInput{
-	height:90%;
+	height:80%;
 	color:white;
 	width:100%;
 	outline:none;
 	overflow:hidden;
+	border-radius: 0px;
 }
 
 #runCode {
 	position: relative;
-	left:50%;
+	left:90%;
 	top:1%;
 	transform:translateX(-50%); 
-	overflow: hidden;
 
+
+}
+
+#changeCodeBtns {
+	position: relative;
+	top:1%;
+	display: inline;
 }
 
 
@@ -45,3 +61,43 @@ body {
 	height: 100%;
 	width:100%;
 }
+
+
+
+.htmlInput{
+
+}
+
+.cssInput{
+	display: none;
+}
+
+
+
+
+@media all and (max-width: 748px){
+	#sandbox {
+		width:100vw;
+		display: none;
+		border:0;
+		position: absolute;
+		left:0%;
+	}
+	#code {
+		width:100vw;
+		font-size:3vh;
+	}
+	#runCode {
+		left:75%;
+	}
+	#changeCodeBtns {
+		left:-25%;
+	}
+
+
+}
+
+
+
+
+

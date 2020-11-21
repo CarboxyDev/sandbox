@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-
+<script src="jquery-min.js"></script>
 <script src="sandbox.js"></script>
   <title>Sandbox</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,8 +18,17 @@
 		</div>
 	</div>
 	<div id="code" class="">
-		<textarea id="codeInput" class="bg-dark"></textarea>
+		<div id="mini-mast"><span id="language">HTML</span></div>
+		<textarea id="codeInput" class="bg-dark htmlInput"></textarea>
+
+		<textarea id="codeInput" class="bg-dark cssInput"></textarea>
+
+
 		<button id="runCode" class="btn btn-success" onclick="runCode()">Run Code</button>
+		<div id="changeCodeBtns">
+		<button id="htmlCode" class="btn btn-secondary" onclick="codeHTML()">HTML</button>
+		<button id="cssCode" class="btn btn-secondary" onclick="codeCSS()">CSS</button>
+		</div>
 	</div>
 
 
